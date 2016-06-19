@@ -18,4 +18,6 @@ before_script:
   - npm install
   - npm install -g gulp
 
-script: gulp
+script:
+  - gulp
+  - vendor/bin/phpunit

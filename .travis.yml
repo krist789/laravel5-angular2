@@ -10,10 +10,9 @@ php:
 node_js:
   - "6"
 
-install:
-   - composer install
-   - npm install -g gulp
-   - npm install
-   - gulp
+before_script:
+  - composer install
+  - npm install
+  - npm install -g gulp
 
 script: gulp
